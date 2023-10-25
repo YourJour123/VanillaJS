@@ -2,16 +2,8 @@
   display: none;
 }
 
-body,
-h1,
-h2,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Press Start 2P", cursive;
   background-color: #f0f0f0;
 }
 
@@ -43,57 +35,75 @@ body {
   color: white;
   font-size: 100px;
   text-align: center;
-  margin-top: 20px;
+  margin: 10px;
+  margin-top: 40px;
 }
 
 #greeting {
+  margin-top: 25px;
   color: white;
   font-size: 30px;
   text-align: center;
 }
 
-#todo-form {
-  text-align: center;
-  margin: 20px auto;
-}
-
 #todo-form input {
-  width: 400px;
+  position: fixed;
+  top: 150px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 150px;
   padding: 10px;
   font-size: 16px;
 }
 
 #todo-list {
-  position: absolute;
+  border: 1px solid gray;
+  max-height: 100px;
+  width: 150px;
+  overflow-y: auto;
+  position: fixed;
   top: 10px;
   right: 10px;
-  background-color: #fff;
-  border: 1px solid #ccc;
   padding: 10px;
-  list-style: none;
+  color: white;
 }
 
 #todo-list li {
+  display: flex;
   font-size: 16px;
+  margin: 10px;
+  align-items: center;
+}
+
+#todo-list li button {
+  margin-left: 10px;
 }
 
 #quote {
-  position: absolute;
-  top: 800px;
+  position: fixed;
+  top: 90%;
   right: 10px;
   color: white;
   display: flex;
   flex-direction: column;
   text-align: center;
   font-size: 16px;
-  margin: 20px auto;
+}
+
+#weather-info {
+  position: fixed;
+  top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px;
 }
 
 #weather {
-  color: white;
-  text-align: center;
-  font-size: 24px;
-  margin: 20px auto;
+  margin-top: 15px;
 }
 
 #background-image {
@@ -105,6 +115,30 @@ body {
   z-index: -1;
 }
 
-body {
-  background-color: #f0f0f0;
+#music {
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  color: white;
+}
+
+#music-title {
+  margin-bottom: 10px;
+}
+
+#music-button button {
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+ul::-webkit-scrollbar {
+  width: 8px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 4px;
 }

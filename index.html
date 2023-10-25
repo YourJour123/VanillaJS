@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
+    />
+    <script
+      src="https://kit.fontawesome.com/abbae54ed8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>App</title>
   </head>
   <body>
@@ -19,16 +27,28 @@
     <h2 id="clock">00:00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
     <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
+      <input type="text" placeholder="write and press enter" required />
     </form>
     <ul id="todo-list"></ul>
     <div id="quote">
       <span></span>
       <span></span>
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
+    <div id="weather-info">
+      <div id="city">
+        <span></span>
+      </div>
+      <div id="weather">
+        <span></span>
+      </div>
+    </div>
+    <div id="music">
+      <div id="music-title">123</div>
+      <div id="music-button">
+        <button><i class="fa-solid fa-backward-fast"></i></button>
+        <button><i class="fa-solid fa-pause"></i></button>
+        <button><i class="fa-solid fa-forward-fast"></i></button>
+      </div>
     </div>
     <script src="JS/greetings.js"></script>
     <script src="JS/clock.js"></script>

@@ -8,10 +8,10 @@ function onGeo(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weather = document.querySelector("#weather span:first-Child");
-      const city = document.querySelector("#weather span:last-Child");
+      const city = document.querySelector("#city span");
+      const weather = document.querySelector("#weather span:first-child");
       city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main}`;
+      weather.innerText = `${data.weather[0].main} / ${data.main.temp}°C`;
     });
 }
 
