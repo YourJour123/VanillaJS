@@ -15,25 +15,27 @@
     <title>App</title>
   </head>
   <body>
+    <h2 id="clock">00:00:00</h2>
     <form id="login-form" class="hidden">
       <input
         required
         maxlength="15"
         placeholder="Write your name!"
         type="text"
+        oninput="validateInput(this);"
       />
       <button>Log In</button>
     </form>
-    <h2 id="clock">00:00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
     <form id="todo-form">
-      <input type="text" placeholder="write and press enter" required />
+      <input
+        type="text"
+        placeholder="Write a ToDo and press enter!!"
+        required
+        oninput="validateInput(this);"
+      />
     </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
+    <ul class="hidden" id="todo-list"></ul>
     <div id="weather-info">
       <div id="city">
         <span></span>
@@ -43,16 +45,18 @@
       </div>
     </div>
     <div id="music">
-      <div id="music-title">123</div>
+      <div id="music-title">title</div>
       <div id="music-button">
         <button><i class="fa-solid fa-backward-fast"></i></button>
         <button><i class="fa-solid fa-pause"></i></button>
         <button><i class="fa-solid fa-forward-fast"></i></button>
       </div>
+      <div id="volume-control">
+        <input type="range" id="volume-slider" min="0" max="100" step="1" />
+      </div>
     </div>
     <script src="JS/greetings.js"></script>
     <script src="JS/clock.js"></script>
-    <script src="JS/quotes.js"></script>
     <script src="JS/background.js"></script>
     <script src="JS/todo.js"></script>
     <script src="JS/weather.js"></script>

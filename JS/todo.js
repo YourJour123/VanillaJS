@@ -28,6 +28,7 @@ function paintToDo(newToDo) {
   li.appendChild(span);
   li.appendChild(button);
   toDoList.appendChild(li);
+  toDoList.classList.remove("hidden");
 }
 
 function handleToDoSubmit(event) {

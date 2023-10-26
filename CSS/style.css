@@ -3,32 +3,35 @@
 }
 
 body {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", sans-serif;
   background-color: #f0f0f0;
 }
 
 #login-form {
   text-align: center;
-  margin: 20px auto;
+  margin: 20px 10px;
 }
 
 #login-form input {
+  border-radius: 50px;
+  border: 1px solid black;
   width: 200px;
   padding: 10px;
   font-size: 16px;
 }
 
 #login-form button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
   cursor: pointer;
   font-size: 16px;
+  border-radius: 25px;
 }
 
 #login-form button:hover {
-  background-color: #0056b3;
+  background-color: yellow;
 }
 
 #clock {
@@ -36,7 +39,7 @@ body {
   font-size: 100px;
   text-align: center;
   margin: 10px;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 #greeting {
@@ -48,13 +51,13 @@ body {
 
 #todo-form input {
   position: fixed;
-  top: 150px;
+  top: 95%;
   right: 10px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  width: 150px;
+  width: 300px;
   padding: 10px;
   font-size: 16px;
 }
@@ -62,10 +65,10 @@ body {
 #todo-list {
   border: 1px solid gray;
   max-height: 100px;
-  width: 150px;
+  width: 300px;
   overflow-y: auto;
   position: fixed;
-  top: 10px;
+  top: 80%;
   right: 10px;
   padding: 10px;
   color: white;
@@ -74,23 +77,18 @@ body {
 #todo-list li {
   display: flex;
   font-size: 16px;
-  margin: 10px;
+  margin: 5px;
   align-items: center;
+  justify-content: space-between;
 }
 
 #todo-list li button {
   margin-left: 10px;
+  cursor: pointer;
 }
 
-#quote {
-  position: fixed;
-  top: 90%;
-  right: 10px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 16px;
+#quote span:last-child {
+  margin-top: 10px;
 }
 
 #weather-info {
@@ -116,22 +114,41 @@ body {
 }
 
 #music {
-  text-align: center;
   position: fixed;
-  bottom: 30px;
+  background-color: rgba(0, 0, 0, 0);
   color: white;
+  text-align: center;
+  top: 850px;
+  border: 1px solid black;
 }
 
 #music-title {
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
-#music-button button {
-  font-size: 14px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0);
+#music-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
+#music-button button {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#music-button button:hover {
+  background-color: gray;
+}
+
+#volume-slider {
+  width: 100px;
+}
 ul::-webkit-scrollbar {
   width: 8px;
   background-color: white;
