@@ -14,7 +14,20 @@ function onLoginSubmit(event) {
 }
 
 function paintingGreetings(username) {
-  greeting.innerText = `Hello ${username}`;
+  const Hour = new Date().getHours();
+  let greetingMessage = "";
+
+  if (Hour >= 22 || Hour < 6) {
+    greetingMessage = "Good night";
+  } else if (Hour >= 6 && Hour < 12) {
+    greetingMessage = "Good morning";
+  } else if (Hour >= 12 && Hour < 18) {
+    greetingMessage = "Good afternoon";
+  } else {
+    greetingMessage = "Good evening";
+  }
+
+  greeting.innerText = `${greetingMessage} ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
@@ -26,3 +39,7 @@ if (savedUsername === null) {
 } else {
   paintingGreetings(savedUsername);
 }
+
+setInterval(function () {
+  paintingGreetings(savedUsername);
+}, 1000);

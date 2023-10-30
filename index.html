@@ -27,15 +27,23 @@
       <button>Log In</button>
     </form>
     <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input
-        type="text"
-        placeholder="Write a ToDo and press enter !!"
-        required
-        oninput="validateInput(this);"
-      />
-    </form>
-    <ul class="hidden" id="todo-list"></ul>
+    <div id="phone">
+      <div id="phone-head"></div>
+      <div id="phone-screen">
+        <form id="todo-input">
+          <input
+            type="text"
+            placeholder="Write a ToDo and press enter !!"
+            required
+            oninput="validateInput(this);"
+          />
+        </form>
+        <ul class="hidden" id="todo-list"></ul>
+      </div>
+      <div id="phone-bottom">
+        <div id="phone-button"></div>
+      </div>
+    </div>
     <div id="weather-info">
       <div id="city">
         <span></span>

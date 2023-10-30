@@ -51,43 +51,32 @@ button {
   text-align: center;
 }
 
-#todo-form input {
+#phone {
   position: fixed;
-  top: 95%;
-  right: 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
   justify-content: center;
-  width: 300px;
-  padding: 10px;
-  font-size: 16px;
+  width: 250px;
+  height: 500px;
+  border-radius: 50px;
+  border: 5px solid silver;
+  background-color: black;
 }
 
-#todo-list {
-  font-family: sans-serif;
-  border: 1px solid gray;
-  max-height: 100px;
-  width: 300px;
-  overflow-y: auto;
-  position: fixed;
-  top: 80%;
-  right: 10px;
-  padding: 10px;
-  color: white;
+#phone-head {
+  width: 60px;
+  height: 10px;
+  position: absolute;
+  top: 30px;
+  border-radius: 20px;
+  background-color: gray;
 }
 
-#todo-list li {
-  display: flex;
-  font-size: 16px;
-  margin: 5px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#todo-list li button {
-  margin-left: 10px;
-  cursor: pointer;
+#phone-screen {
+  background-color: white;
+  width: 220px;
+  height: 380px;
 }
 
 #quote span:last-child {
@@ -119,7 +108,6 @@ button {
 ul::-webkit-scrollbar {
   width: 8px;
   background-color: white;
-  border-radius: 4px;
 }
 
 ul::-webkit-scrollbar-thumb {
