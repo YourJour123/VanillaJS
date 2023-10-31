@@ -30,7 +30,7 @@
     <div id="phone">
       <div id="phone-head"></div>
       <div id="phone-screen">
-        <form id="todo-input">
+        <form id="todo-form">
           <input
             type="text"
             placeholder="Write a ToDo and press enter !!"
@@ -41,7 +41,7 @@
         <ul class="hidden" id="todo-list"></ul>
       </div>
       <div id="phone-bottom">
-        <div id="phone-button"></div>
+        <button id="phone-button"><i class="fa-regular fa-square"></i></button>
       </div>
     </div>
     <div id="weather-info">
@@ -52,10 +52,32 @@
         <span></span>
       </div>
     </div>
+    <div class="calendar">
+      <div class="calendar-header">
+        <button id="prev-month">&lt;</button>
+        <h2 id="current-month"></h2>
+        <button id="next-month">&gt;</button>
+      </div>
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody id="calendar-body"></tbody>
+      </table>
+    </div>
     <script src="JS/greetings.js"></script>
     <script src="JS/clock.js"></script>
     <script src="JS/background.js"></script>
     <script src="JS/todo.js"></script>
     <script src="JS/weather.js"></script>
+    <script src="JS/calender.js"></script>
   </body>
 </html>
