@@ -5,10 +5,6 @@ const greeting = document.querySelector("#greeting");
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
-function hideGreeting() {
-  greeting.classList.add(HIDDEN_CLASSNAME);
-}
-
 function onLoginSubmit(event) {
   event.preventDefault();
   loginForm.classList.add(HIDDEN_CLASSNAME);

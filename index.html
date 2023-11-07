@@ -15,17 +15,20 @@
     <title>App</title>
   </head>
   <body>
+    <div id="welcome">
+      <h1>Hello What's your name?</h1>
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          placeholder="Write your name!"
+          type="text"
+          oninput="validateInput(this);"
+        />
+        <button>Submit</button>
+      </form>
+    </div>
     <h2 id="clock">00:00:00</h2>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        placeholder="Write your name!"
-        type="text"
-        oninput="validateInput(this);"
-      />
-      <button>Log In</button>
-    </form>
     <h1 id="greeting" class="hidden"></h1>
     <div id="phone">
       <div id="phone-head"></div>

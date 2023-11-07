@@ -1,3 +1,22 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
 .hidden {
   display: none;
 }
@@ -6,6 +25,28 @@ body,
 button {
   font-family: "Press Start 2P";
   background-color: #f0f0f0;
+}
+
+#welcome {
+  background-color: black;
+  color: white;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+}
+
+#welcome h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(14, end) infinite,
+    blink-caret 0.7s step-end infinite;
 }
 
 #login-form {
@@ -33,7 +74,7 @@ button {
 }
 
 #login-form button:hover {
-  background-color: yellow;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 #clock {
@@ -143,14 +184,13 @@ button {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-#quote span:last-child {
-  margin-top: 10px;
-}
-
 #weather-info {
   position: fixed;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  padding: 20px;
   top: 10px;
-  color: white;
+  color: black;
   text-align: center;
   font-size: 16px;
   margin: 10px;
