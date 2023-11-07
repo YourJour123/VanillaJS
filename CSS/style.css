@@ -169,63 +169,6 @@ button {
   z-index: -1;
 }
 
-.calendar {
-  width: 300px;
-  margin: 30px auto;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.calendar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #0074d9;
-  color: #fff;
-  border-radius: 5px 5px 0 0;
-}
-
-button {
-  background: none;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-  color: #fff;
-}
-
-h2 {
-  margin: 0;
-  font-size: 20px;
-}
-
-.calendar-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  padding: 10px;
-  text-align: center;
-}
-
-thead {
-  background-color: #f0f0f0;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-#calendar-body td {
-  cursor: pointer;
-}
-
-#current-month {
-  font-weight: bold;
-}
 ul::-webkit-scrollbar {
   width: 8px;
   background-color: white;
