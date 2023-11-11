@@ -1,30 +1,10 @@
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
-}
-
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 body,
 button {
   font-family: "Press Start 2P";
-  background-color: #f0f0f0;
 }
 
 #welcome {
@@ -40,13 +20,6 @@ button {
   align-items: center;
   top: 0;
   right: 0;
-}
-
-#welcome h1 {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(14, end) infinite,
-    blink-caret 0.7s step-end infinite;
 }
 
 #login-form {
@@ -121,7 +94,7 @@ button {
   display: flex;
   flex-direction: column;
   position: fixed;
-  background-color: white;
+  background-color: beige;
   width: 220px;
   height: 380px;
 }

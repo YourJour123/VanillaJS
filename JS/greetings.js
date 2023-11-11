@@ -1,6 +1,7 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
+const welcome = document.querySelector("#welcome");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -11,6 +12,7 @@ function onLoginSubmit(event) {
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
   paintingGreetings(username);
+  welcome.classList.add(HIDDEN_CLASSNAME);
 }
 
 function paintingGreetings(username) {
@@ -39,6 +41,7 @@ if (savedUsername === null) {
   hideGreeting();
 } else {
   paintingGreetings(savedUsername);
+  welcome.classList.add(HIDDEN_CLASSNAME);
 }
 
 setInterval(function () {
