@@ -1,0 +1,15 @@
+#weather-info {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  padding: 20px;
+  top: 10px;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px;
+}
+
+#weather {
+  margin-top: 15px;
+}
