@@ -3,6 +3,7 @@
 @import "todolist.css";
 @import "weather.css";
 @import "welcome.css";
+@import "musicplayer.css";
 
 .hidden {
   display: none !important;
