@@ -55,34 +55,64 @@
         <span></span>
       </div>
     </div>
-    <div id="music-player">
-      <audio id="song" src=""></audio>
-      <div id="music-info">
-        <div id="music-cover">
-          <img src="" />
+    <div id="container">
+      <div id="button">
+        <div id="previous-music">
+          <button id="previous-music-button">
+            <i id="previous-music-icon" class="fa-solid fa-backward-fast"></i>
+          </button>
         </div>
-        <div id="music-album">
-          <span id="artist"></span>
-          <span id="title"></span>
+        <div id="volume-up">
+          <button id="volume-up-button">
+            <i id="volume-up-icon" class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div id="next-music">
+          <button id="next-music-button">
+            <i id="next-music-icon" class="fa-solid fa-forward-fast"></i>
+          </button>
+        </div>
+        <div id="volume-down">
+          <button id="volume-down-button">
+            <i id="volume-down-icon" class="fa-solid fa-minus"></i>
+          </button>
+        </div>
+        <div id="music-play">
+          <button id="music-play-button">
+            <i id="music-play-icon" class="fa-solid fa-play"></i>
+          </button>
         </div>
       </div>
-      <div id="music-bar">
-        <div id="music-timebar">
-          <div id="music-progressbar"></div>
+      <div id="display">
+        <div id="status-bar">
+          <div id="time"></div>
+          <div id="battery">
+            <i class="fa-solid fa-battery-half fa-2xl"></i>
+          </div>
         </div>
-        <span>00:00</span>
+        <div id="display2">
+        <div id="music-info">
+          <div id="music-artist">
+            <div id="music-artist-icon">
+              <i class="fa-solid fa-user fa-xl"></i>
+            </div>
+            <div id="music-artist-name"></div>
+          </div>
+            <div id="music-name">
+              <div id="music-name-icon">
+                <i class="fa-solid fa-music fa-xl"></i>
+              </div>
+              <div id="music-name-title"></div>
+            </div>
+          </div>
+        </div>
+        <div id="slider-container">
+          <div id="current-time">00:00</div>
+           <div id="time-bar">
+            <div id="time-bar-inside"></div>
+           </div>
+           <div id="total-duration">00:00</div>
       </div>
-      <div id="music-controler">
-        <button><i class="fa-solid fa-backward-fast"></i></button>
-        <button id="button-play">
-          <i class="fa-solid fa-play"></i>
-        </button>
-        <button id="button-pause">
-          <i class="fa-solid fa-pause"></i>
-        </button>
-        <button><i class="fa-solid fa-forward-fast"></i></button>
-      </div>
-    </div>
     <script src="JS/greetings.js"></script>
     <script src="JS/clock.js"></script>
     <script src="JS/background.js"></script>
